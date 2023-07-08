@@ -64,12 +64,12 @@ def main(args):
             else:
                 c.print("[yellow]Detecting face...[/]")
 
-            draw.rectangle(
-                ((left, top), (right, bottom)),
-                outline=(0, 255, 0) if needed_face else (0, 0, 255),
-                width=1,
-            )
             if args.debug:
+                draw.rectangle(
+                    ((left, top), (right, bottom)),
+                    outline=(0, 255, 0) if needed_face else (0, 0, 255),
+                    width=1,
+                )
                 text = "DETECTED" if needed_face else "UNKNWN"
 
                 # _, text_height = draw.textsize(text)
