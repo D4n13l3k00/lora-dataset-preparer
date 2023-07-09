@@ -1,6 +1,7 @@
 /input_images
+/Photos
 /debug
 /output
 /.ruff_cache
-/face.jpg
+/face.*
 /.venv
