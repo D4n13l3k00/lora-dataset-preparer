@@ -17,6 +17,9 @@ def main(args):
     if not (path := Path("debug")).is_dir() and args.debug:
         path.mkdir()
 
+    if not (path := Path(args.dst)).is_dir():
+        path.mkdir()
+
     c.print("[green]Getting needed face...[/]")
 
     input_face = face_recognition.load_image_file(args.face)
